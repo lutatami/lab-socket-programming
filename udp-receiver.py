@@ -9,6 +9,6 @@ sock.bind((UDP_IP, UDP_PORT))
 print("UDP Server started !")
 while True:
     data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
-    data = data.decode('utf8') + "updated server"
+    data = data + "updated server"
     print("received message:", data.decode('utf8'), " from ", addr)
     sock.sendto(data, addr)
