@@ -1,11 +1,5 @@
-20210515 
-DevOps Example
-Python script
-2nd commit
-3rd commit
-4th commit
-5th commit
-7th commit
-8th commit
-9th commit
-# Readme.md file
+#DevOps Example
+## Python Flask
+## AWS 
+## Udp receiver
+### Readme.md file
