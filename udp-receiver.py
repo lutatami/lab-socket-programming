@@ -14,6 +14,5 @@ while True:
     data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
     print("received message:", data.decode('utf8'), " from ", addr)
     currentTime = " " + time.ctime(time.time()) + "\r\n"
-    rcv_str = "recv: "
-    data = rcv_str.encode('ascii') + data + currentTime.encode('ascii')
+    data = data + currentTime.encode('ascii')
     sock.sendto(data, addr)
