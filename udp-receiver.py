@@ -9,7 +9,7 @@ UDP_PORT = 5001
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) 
 sock.bind((UDP_IP, UDP_PORT))
 
-print("New version of UDP server started !")
+print("20220115 New version of UDP server started !")
 while True:
     data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
     print("Update received message:", data.decode('utf8'), " from ", addr)
