@@ -15,5 +15,4 @@ while True:
     print("Update received message:", data.decode('utf8'), " from ", addr)
     currentTime = " " + time.ctime(time.time()) + "\r\n"
     data = "new version" + data + currentTime.encode('ascii')
-    print(data)
     sock.sendto(data, addr)
