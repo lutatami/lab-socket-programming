@@ -12,7 +12,7 @@ sock.bind((UDP_IP, UDP_PORT))
 print("20220115 New version of UDP server started !")
 while True:
     data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
-    print("Update received message:", data.decode('utf8'), " from ", addr)
+    print("received message:", data.decode('utf8'), " from ", addr)
     currentTime = " " + time.ctime(time.time()) + "\r\n"
     rcv_str = "recv: "
     data = rcv_str.encode('ascii') + data + currentTime.encode('ascii')
