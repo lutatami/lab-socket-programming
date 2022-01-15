@@ -14,6 +14,5 @@ while True:
     data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
     print("Update received message:", data.decode('utf8'), " from ", addr)
     currentTime = " " + time.ctime(time.time()) + "\r\n"
-    data = "new version" + data + currentTime.encode('ascii')
-    print(data)
+    data = UDP_IP.encode('ascii') + data + currentTime.encode('ascii')
     sock.sendto(data, addr)
