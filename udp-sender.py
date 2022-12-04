@@ -1,9 +1,7 @@
 # coding: utf-8
 import socket
 
-UDP_IP = "3.34.48.61"
-#UDP_IP = "49.50.174.52"
-#UDP_IP = "127.0.0.1"
+UDP_IP = "127.0.0.1"
 UDP_PORT = 5001
 server_addr = (UDP_IP, UDP_PORT)
 
