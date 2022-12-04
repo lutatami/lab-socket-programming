@@ -15,6 +15,6 @@ while True:
     data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
     print("Received message:", data.decode('utf8'), " from ", addr)
     currentTime = " " + time.ctime(time.time()) + "\r\n"
-    my_ip = getPublicIp()
-    data = "AWS server is ".encode('ascii') + my_ip.encode('ascii') + data + currentTime.encode('ascii')
+    my_ip = myPublicIp.getPublicIp()
+    data = "AWS server ".encode('ascii') + my_ip.encode('ascii')  + " up and waiting for " + data + currentTime.encode('ascii')
     sock.sendto(data, addr)
