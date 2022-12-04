@@ -1,6 +1,6 @@
 import socket
 import time
-import my_public_ip
+import myPublicIp
 
 UDP_IP = "0.0.0.0"
 UDP_PORT = 5001
