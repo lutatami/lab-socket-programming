@@ -2,8 +2,8 @@
 #-*- coding:utf-8 -*-
 import socket
 
-IP = '3.34.178.210'
-TCP_PORT = 54147
+IP = '34.64.38.142'
+TCP_PORT = 5005
 BUFFER_SIZE = 1024
 MESSAGE = ''
 
